@@ -99,3 +99,24 @@ print(value)
 value = sorted(fruits,reverse=True)
 print(value)
 # sorted()方法跟sort()方法很像，不過sorted()方法是可以暫時性的改變排列順序，不會影響原串列的排列順序
+
+# 擷取串列中某部分的內容我們在python中稱之為切片，切片的用法是需要指定使用的第一個元素和最後一個元素的索引足標，和range()函式用法一樣，切片的處理範圍不含第二個索引足標的元素
+
+# 但是有兩點要注意 :
+# 1.沒有指定第一個元素的索引足標則從0開始計算
+# 2.沒有指定最後一個元素的索引足標則視為切到最後一位
+
+fruits+=["apple"]
+# 要新增元素甚至可以只用+=來完成
+
+fruits.append("lemon") 
+print(fruits)
+print(fruits[0:3]) # 印出索引足標0,1,2對應的元素
+print(fruits[1:4]) # 印出索引足標1,2,3對應的元素
+print(fruits[:2]) # 印出從索引足標0到1的元素
+print(fruits[2:]) # 印出從索引足標2到最後的元素
+print(fruits[-2:]) # 印出從索引足標-2(也就是倒數第二個)到最後的元素
+
+myFruits = fruits[:]
+print(myFruits)
+
