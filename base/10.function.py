@@ -118,3 +118,19 @@ get_name("jack")
 get_name("rose","john","jane")
 
 # 如果上述的程式碼沒有for迴圈那行，那麼程式碼就會出錯，因為for迴圈的工作是把多元組裡的值一一輸出出來，所以如果沒有for迴圈那行而直接印出的話，是印出多元組而不是印出接收到的字串值，多元組是不能跟字串相加的，所以它會跑出下列這種錯誤
+
+
+# * 兩個星號(建立空字典)
+
+def users(first_name,last_name,**user_info): # **user_info參數中的星號會讓python建立一個名字為user_info的空字典
+    user={}  
+    user["first"]=first_name # 將first_name新增至user字典
+    user["last"]=last_name # 將last_name新增至user字典
+    for key,value in user_info.items(): # 用迴圈遍訪user_info裡的鍵值對並將其新增至user字典
+        user[key]=value
+    return user
+    
+user1=users("bonny","chang",city="taipei")
+print(user1)
+user2=users("steven","chang",city="taoyuan")
+print(user2)
