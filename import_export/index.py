@@ -1,11 +1,11 @@
-import name
-import anotherName as newName
-from nameAndCity import get_city as getNewCity
-from allName import *
+import import_export.name 
+import import_export.anotherName as newName
+from import_export.nameAndCity import get_city as getNewCity
+from import_export.allName import *
 
 
-name.get_name("bonny")
-name.get_name("jack","rose")
+import_export.name.get_name("bonny")
+import_export.name.get_name("jack","rose")
 
 newName.get_name("Gary")
 

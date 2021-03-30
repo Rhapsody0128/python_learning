@@ -19,5 +19,5 @@ dog1.eat() # 呼叫eat方法
 dog1.sleep() # 呼叫sleep方法
 
 dog2=Dog("akukin",4)
-print("My dog's name is "+dog2.name+" and it's "+str(dog2.age)+" years old.")
+print(" My dog's name is "+ dog2.name+" and it's "+str(dog2.age)+" years old.")
 dog2.sleep()
