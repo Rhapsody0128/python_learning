@@ -1,4 +1,4 @@
-1984
+8418
 def get_name(*names):
     for name in names:
         print("hello,"+name)

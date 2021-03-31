@@ -33,3 +33,10 @@ with open("file_processing/number.txt","w") as file_object: # 以寫入模式開
 			
 			print("第一行寫入了"+a)
 			print("第二行寫入了"+b)
+
+for i in range(2) :
+	a = str(int(random.random()*10000))
+	with open(f"file_processing/{a}.txt",'w') as test :
+		test.write(a)
+
+
